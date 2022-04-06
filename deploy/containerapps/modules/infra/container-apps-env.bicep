@@ -17,7 +17,7 @@ resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03
   })
 }
 
-resource containerAppsEnvironment 'Microsoft.App/kubeEnvironments@2021-02-01' = {
+resource containerAppsEnvironment 'Microsoft.Web/kubeEnvironments@2021-03-01' = {
   name: containerAppsEnvironmentName
   location: location
   properties: {
